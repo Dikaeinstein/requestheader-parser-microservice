@@ -1,0 +1,23 @@
+{
+  "name": "requestparser-microservice",
+  "version": "1.0.0",
+  "description": "Parses incoming requests header",
+  "main": "index.js",
+  "author": "Dikaeinstein",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "start": "node dist/server.js",
+    "prestart": "babel src -d dist"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.1"
+  },
+  "engines": {
+    "node": "8.10.0"
+  }
+}
